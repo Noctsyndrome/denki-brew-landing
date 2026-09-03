@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>Dennki Brewing</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100%;
+      background-image: repeating-conic-gradient(#f7d878 0% 25%, #efc04a 0% 50%);
+      background-size: 12.5vw 12.5vw;
+      background-position: center;
+      font-family: "Hiragino Sans", "Yu Gothic", "Yu Gothic UI", "PingFang SC",
+        "Microsoft YaHei", "Segoe UI", sans-serif;
+    }
+
+    .panel {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 40px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+
+    .title {
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      color: #111;
+    }
+
+    .sub-ja {
+      font-size: 0.78rem;
+      color: #666;
+      letter-spacing: 0.08em;
+    }
+
+    .sub-en {
+      font-size: 0.68rem;
+      color: #aaa;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 480px) {
+      body { background-size: 25vw 25vw; }
+      .panel { padding: 32px 36px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAEV0lEQVR4nOzdu4vcVRjH4Z1lcbAwGi/BCzJeMBLYImghKKRRzGJhUEshra2V/4NVSrGwESwttDMSb6BgIQQJRBM0DqKRRNFsCJIgO4L18OVl56xn8pvnqQ/nnC0+nOLdmdlY62T70tlZZd2+A4dGe38bmG+99wVgmQkEAoFAIBAIBAKBQCAQCAQCgUAgEAxmSr1qk/lV+3t78YJAIBAIBAKBQCAQCAQCgUAgEAgEAoFA0O0z6Vc/OVGaBM82t0r7VSfG1XNvefRQ6dzxZKvpua3/XhbjBYFAIBAIBAKBQCAQCAQCgUAgEAgEAoGg+TS2OjGuqk60r986Ka0b/z1d8Ea7O7eqer/W55rMz+cFgUAgEAgEAoFAIBAIBAKBQCAQCAQCgaDbZ9Jbaz0hv/HD2dK60VptXfU/Aqp6TdxXjRcEAoFAIBAIBAKBQCAQCAQCgUAgEAgEguaT9K+u3lVa9/Rtf5TWVSfarSfVF+98oul+k/0Hm+5XNe5y6nB4QSAQCAQCgUAgEAgEAoFAIBAIBAKBQCDo9pn0907XJumvHq5N5ls7/92Zpd7vuRdebrof83lBIBAIBAKBQCAQCAQCgUAgEAgEAoFAIOg2Sd/89p3awsNvND33wonXS+u2jlwprVvf/9SCN9qlbz4uLbvx5Ft7fpUh84JAIBAIBAKBQCAQCAQCgUAgEAgEAoFAsPS/k/7Lh2+X1j3w4mt7fpd5dv78urSu18R9+uO50rrr2xdnLc8d77tv1HK/XrwgEAgEAoFAIBAIBAKBQCAQCAQCgUAgECz9JL2qOnHvpdfE/d77D5TWffZp7TPuVUOZzHtBIBAIBAKBQCAQCAQCgUAgEAgEAoFAIOg2SX/mlc3Suu9P/Vxa9/izDzbdr2rnoedL69Z/Olla9889tf02Ltf2++3XS6V1R48dbzqpPnf689IkffLIwZbHNucFgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEgsF8uzs3p+rvuPfiBYFAIBAIBAKBQCAQCAQCgUAgEAgEAoHAJJ2uLkynva8QeUEgEAgEAoFAIBAIBAKBQCAQCAQCgUAgMEnnP9XfNa9a9gl5lRcEAoFAIBAIBAKBQCAQCAQCgUAgEAgEApP0ges10T567Pioy8GNeUEgEAgEAoFAIBAIBAKBQCAQCAQCgUAg6DZJ//L9M203PNV2u/Nf3F5a99jayabnblxuu1/VUCbfrXlBIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBjMZ9J//+tK0/3uvqM2SS9P3I+0vV/Vw5NJl3OHwgsCgUAgEAgEAoFAIBAIBAKBQCAQCAQCQbdJ+rWX3ux1dMm1xvuVv2N9u7bMhPz/4QWBQCAQCAQCgUAgEAgEAoFAIBAIBAKBoNs3en/0wbuzXmevEt/avhgvCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAT/BgAA//+Ta5tfM68+UgAAAABJRU5ErkJggg==" alt="Dennki Brewing pixel beer mug logo">
+    <p class="title">Dennki Brewing</p>
+    <p class="sub-ja">電気ブルーイング（仮）</p>
+    <p class="sub-en">&lt; A Code Brewing Company /&gt;</p>
+  </div>
+</body>
+</html>
