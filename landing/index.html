@@ -28,6 +28,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      width: max-content;
+      max-width: calc(100vw - 32px);
       background: #fff;
       padding: 40px 48px;
       display: flex;
@@ -63,6 +65,41 @@
       text-transform: uppercase;
     }
 
+    .projects {
+      list-style: none;
+      align-self: stretch;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #eee;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .projects a {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 6px 8px;
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      color: #666;
+      text-decoration: none;
+      text-align: left;
+    }
+
+    .projects a:hover,
+    .projects a:focus-visible {
+      background: #efc04a;
+      color: #111;
+      outline: none;
+    }
+
+    .projects span { color: #bbb; }
+    .projects a:hover span,
+    .projects a:focus-visible span { color: #111; }
+
     @media (max-width: 480px) {
       body { background-size: 25vw 25vw; }
       .panel { padding: 32px 36px; }
@@ -78,6 +115,10 @@
     <p class="title">Dennki Brewing</p>
     <p class="sub-ja">電気ブルーイング（仮）</p>
     <p class="sub-en">&lt; A Code Brewing Company /&gt;</p>
+    <ul class="projects" aria-label="Projects">
+      <li><a href="/literary-cats/">Literary Cats <span aria-hidden="true">→</span></a></li>
+      <li><a href="/the-quick-brown-fox-jumps-over-the-lazy-dog">The Quick Brown Fox <span aria-hidden="true">→</span></a></li>
+    </ul>
   </div>
 </body>
 </html>
