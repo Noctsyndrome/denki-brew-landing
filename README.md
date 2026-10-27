@@ -1,36 +1,18 @@
-# Denki Brew Landing
+# 🍺 Dennki Brewing
 
-Static landing page for [denkibrew.com](https://denkibrew.com), deployed as a Cloudflare Worker with Static Assets.
+[Visit denkibrew.com](https://www.denkibrew.com/)
 
-## Project structure
+Dennki Brewing (電気ブルーイング, working name) is *a code brewing company*: a small workshop where side projects are brewed one batch at a time. Each project starts from a simple idea and keeps evolving after it goes live.
 
-- `landing/` contains the HTML, logo, and favicon assets served by Cloudflare.
-- `wrangler.jsonc` configures the existing `withered-bush-ee11` Worker.
+## On tap
 
-## Development
+- **[Literary Cats](https://www.denkibrew.com/literary-cats/)**: a growing archive of cats in literature, with a new entry added every day. Each one covers the character, its author and original work, and its place in the story.
+- **[The Quick Brown Fox](https://www.denkibrew.com/the-quick-brown-fox-jumps-over-the-lazy-dog)**: the classic pangram animated literally, as a fox jumping over a sleeping dog, drawn in a different visual style in each version.
 
-Install dependencies:
+More projects will be added over time.
 
-```sh
-npm install
-```
+## About this repository
 
-Run the site locally:
+This repository contains the denkibrew.com front page: a single page with the pixel-art beer mug logo and links to each project. Project sites live in their own repositories and are served under the same domain.
 
-```sh
-npm run dev
-```
-
-Validate a deployment without uploading:
-
-```sh
-npm run deploy:check
-```
-
-Deploy manually:
-
-```sh
-npm run deploy
-```
-
-Pushes to `main` are automatically deployed by Cloudflare Workers Builds.
+The page is plain static HTML (`landing/`) served by Cloudflare Workers; pushes to `main` are deployed automatically.
