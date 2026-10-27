@@ -10,9 +10,3 @@ Dennki Brewing (電気ブルーイング, working name) is *a code brewing compa
 - **[The Quick Brown Fox](https://www.denkibrew.com/the-quick-brown-fox-jumps-over-the-lazy-dog)**: the classic pangram animated literally, as a fox jumping over a sleeping dog, drawn in a different visual style in each version.
 
 More projects will be added over time.
-
-## About this repository
-
-This repository contains the denkibrew.com front page: a single page with the pixel-art beer mug logo and links to each project. Project sites live in their own repositories and are served under the same domain.
-
-The page is plain static HTML (`landing/`) served by Cloudflare Workers; pushes to `main` are deployed automatically.
